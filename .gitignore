@@ -1,0 +1,49 @@
+# Entorno virtual
+.venv/
+env/
+venv/
+ENV/
+
+# Archivos de caché y bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Archivos de entorno y secretos (¡MUY IMPORTANTE!)
+.env
+.env.local
+
+# Bases de datos locales (si usas SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# Entornos de desarrollo / Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store

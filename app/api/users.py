@@ -1,4 +1,7 @@
+#Para para la creacion de nuestros endpoint 
+#Usamos APIRouter de la siguiente manera
 from fastapi import APIRouter, Depends
+
 router = APIRouter(prefix="/users", tags=["Users"])
 
 @router.get("/users")
