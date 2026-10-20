@@ -6,6 +6,9 @@ app = FastAPI()
 app.title = "task_manager"
 app.version = "1.0.0"
 
+@app.on_event("startup")
+def on_startup():
+    create_db_and_tables()
 
 #Permite la impelemntacion de los endpoint 
 app.include_router(users.router)
