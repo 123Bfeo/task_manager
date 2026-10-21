@@ -20,4 +20,7 @@ class UserRepository:
         self.session.commit()
         self.session.refresh(user)
         return user
-    
+
+    def get_all_users(self)->list[User]:
+        statement = select(User)
+        return self.session.exec(statement).all()

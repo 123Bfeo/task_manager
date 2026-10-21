@@ -44,3 +44,5 @@ class AuthService:
     def create_token_for_user(self, user:User)->str:
         #El "sub" debe ser un string unico en toda la app
         return create_access_token(data={"sub": str(user.id)})
+
+    
